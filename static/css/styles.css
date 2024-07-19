@@ -1,0 +1,143 @@
+/* Base Styles */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    color: #333;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    color: #fff;
+    margin-top: 40px;
+    font-size: 36px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: color 0.3s ease-in-out;
+}
+
+/* Form Container */
+form {
+    margin: 0 auto;
+    padding: 40px;
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+form:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #555;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Input Fields */
+input[type="file"] {
+    display: block;
+    margin-top: 10px;
+    padding: 15px;
+    width: 100%;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+input[type="file"]:focus {
+    border-color: #007BFF;
+    background-color: #e9f5ff;
+}
+
+/* Buttons */
+button {
+    margin-top: 30px;
+    padding: 15px 30px;
+    width: 100%;
+    background: linear-gradient(135deg, #66d3fa 0%, #aeb0ff 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #50b5e0 0%, #9a9eff 100%);
+    transform: scale(1.05);
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 40px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+table, th, td {
+    border: 1px solid #dee2e6;
+}
+
+th, td {
+    padding: 18px;
+    text-align: left;
+    font-size: 16px;
+}
+
+th {
+    background: linear-gradient(135deg, #66d3fa 0%, #aeb0ff 100%);
+    color: white;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+tr:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    form {
+        padding: 30px;
+    }
+
+    label, input[type="file"], button {
+        font-size: 16px;
+    }
+
+    th, td {
+        padding: 14px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}
